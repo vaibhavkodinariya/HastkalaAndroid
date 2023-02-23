@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ProceedToPay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.hastkala.ProceedToPayActivity">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:elevation="@dimen/cardview_default_elevation"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="142dp">
+
+                <TextView
+                    android:id="@+id/ProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="9dp"
+                    android:text="@string/productname_order"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ProductImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="9dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.898"
+                    app:layout_constraintStart_toEndOf="@+id/ProductName"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.056" />
+
+                <TextView
+                    android:id="@+id/quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quantity_1"
+                    app:layout_constraintEnd_toStartOf="@+id/ProductImage"
+                    app:layout_constraintStart_toEndOf="@+id/discription"
+                    app:layout_constraintTop_toBottomOf="@+id/discription" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="19dp"
+                    android:layout_marginStart="4dp"
+                    android:text="@string/Product_Price"
+                    android:textAppearance="?attr/textAppearanceBody2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/discription"
+                    app:layout_constraintTop_toBottomOf="@+id/discription" />
+
+                <TextView
+                    android:id="@+id/discription"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ProductDiscription_Order"
+                    android:layout_margin="8dp"
+                    app:layout_constraintEnd_toStartOf="@+id/quantity"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ProductName" />
+
+                <TextView
+                    android:id="@+id/sizetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="19dp"
+                    android:text="@string/size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/quantity"
+                    app:layout_constraintStart_toEndOf="@+id/price"
+                    app:layout_constraintTop_toBottomOf="@+id/discription"
+                    />
+
+                <TextView
+                    android:id="@+id/size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/x"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/quantity"
+                    app:layout_constraintHorizontal_bias="0.565"
+                    app:layout_constraintStart_toEndOf="@+id/sizetext"
+                    app:layout_constraintTop_toBottomOf="@+id/quantity"
+                    app:layout_constraintVertical_bias="0.25" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

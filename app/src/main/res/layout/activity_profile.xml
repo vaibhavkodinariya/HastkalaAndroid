@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scene_two"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.hastkala.ProfileActivity">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/GenderTab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:elevation="@dimen/cardview_default_elevation"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/malecardview"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="20dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/male"
+                    android:focusable="true"
+                    app:cardCornerRadius="100dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:src="@drawable/male1" />
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+                <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                    android:id="@+id/femalecardview"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:clickable="true"
+                    android:contentDescription="@string/female"
+                    android:focusable="true"
+                    app:cardCornerRadius="100dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:src="@drawable/female1" />
+                </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+                <Button
+                    android:id="@+id/EditGender"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    android:layout_width="37dp"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="4dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:icon="@drawable/edit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toEndOf="@+id/malecardview"
+                    app:layout_constraintTop_toBottomOf="@+id/malecardview" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30sp"
+            android:labelFor="@id/Name"
+            app:layout_constraintEnd_toEndOf="@+id/GenderTab"
+            app:layout_constraintStart_toStartOf="@+id/GenderTab"
+            app:layout_constraintTop_toBottomOf="@+id/GenderTab">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/name"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/MobileNumber"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30sp"
+            android:labelFor="@id/MobileNumber"
+            app:layout_constraintEnd_toEndOf="@+id/Name"
+            app:layout_constraintStart_toStartOf="@+id/Name"
+            app:layout_constraintTop_toBottomOf="@+id/Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Usermobileno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobile_number"
+                android:inputType="phone"
+                android:maxLength="13" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Address"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30sp"
+            android:labelFor="@id/Address"
+            app:layout_constraintEnd_toEndOf="@+id/MobileNumber"
+            app:layout_constraintStart_toStartOf="@+id/MobileNumber"
+            app:layout_constraintTop_toBottomOf="@+id/MobileNumber">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/useraddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/address"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/State"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30sp"
+            android:labelFor="@id/State"
+            app:layout_constraintEnd_toEndOf="@+id/Address"
+            app:layout_constraintStart_toStartOf="@+id/Address"
+            app:layout_constraintTop_toBottomOf="@+id/Address">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userstate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/state"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Pincode"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30sp"
+            android:labelFor="@id/Pincode"
+            app:layout_constraintEnd_toEndOf="@+id/State"
+            app:layout_constraintStart_toStartOf="@+id/State"
+            app:layout_constraintTop_toBottomOf="@+id/State">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userpincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/pincode"
+                android:inputType="number"
+                android:maxLength="6" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/save"
+            app:layout_constraintEnd_toEndOf="@+id/Pincode"
+            app:layout_constraintStart_toStartOf="@+id/Pincode"
+            app:layout_constraintTop_toBottomOf="@+id/Pincode" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/Btn_Update"
+            app:layout_constraintEnd_toEndOf="@+id/Pincode"
+            app:layout_constraintStart_toStartOf="@+id/Pincode"
+            app:layout_constraintTop_toBottomOf="@+id/Pincode" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

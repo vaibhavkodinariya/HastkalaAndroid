@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.hastkala.AccountActivity"
+        android:paddingBottom="10dp"
+        >
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+                android:id="@+id/circularRevealCardViewMale"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="100dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/Malecardview"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:src="@drawable/male1" />
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/femalecardview"
+                    android:layout_width="100sp"
+                    android:layout_height="100sp"
+                    android:src="@drawable/female1" />
+            </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/User_Name"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                app:layout_constraintEnd_toEndOf="@+id/circularRevealCardViewMale"
+                app:layout_constraintStart_toStartOf="@+id/circularRevealCardViewMale"
+                app:layout_constraintTop_toBottomOf="@+id/circularRevealCardViewMale" />
+
+            <TextView
+                android:id="@+id/useremail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Email"
+                android:layout_margin="20dp"
+                android:textAppearance="?attr/textAppearanceBody2"
+                app:layout_constraintEnd_toEndOf="@+id/name"
+                app:layout_constraintStart_toStartOf="@+id/name"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/User_MobileNumber"
+                android:layout_margin="5dp"
+                android:textAppearance="?attr/textAppearanceBody2"
+                app:layout_constraintEnd_toEndOf="@+id/useremail"
+                app:layout_constraintStart_toStartOf="@+id/useremail"
+                app:layout_constraintTop_toBottomOf="@+id/useremail" />
+
+            <Button
+                android:id="@+id/Edit_Profile"
+                style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                android:layout_width="37dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="4dp"
+                app:icon="@drawable/edit"
+                android:clickable="true"
+                android:focusable="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/number"
+                app:layout_constraintTop_toBottomOf="@+id/number" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/OrderCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:layout_constraintEnd_toEndOf="@+id/materialCardView"
+            app:layout_constraintStart_toStartOf="@+id/materialCardView"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/orders"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/GotoOrder"
+                    android:textSize="22sp"
+                    android:layout_margin="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/show_order"
+                    />
+                <com.google.android.material.divider.MaterialDivider
+                    android:id="@+id/ViewOrder_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/orders"
+                    app:layout_constraintBottom_toTopOf="@+id/show_order"
+                    />
+                <Button
+                    android:id="@+id/show_order"
+                    style="?attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ViewOrders"
+                    app:layout_constraintTop_toBottomOf="@+id/ViewOrder_divider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/CartCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="9dp"
+            app:cardElevation="@dimen/cardview_default_elevation"
+            app:layout_constraintEnd_toEndOf="@+id/OrderCard"
+            app:layout_constraintStart_toStartOf="@+id/OrderCard"
+            app:layout_constraintTop_toBottomOf="@+id/OrderCard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/GotoCart"
+                    android:textSize="22dp"
+                    android:layout_margin="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toTopOf="@+id/ViewCart_divider"
+                    />
+                <com.google.android.material.divider.MaterialDivider
+                    android:id="@+id/ViewCart_divider"
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="1dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cart"
+                    app:layout_constraintBottom_toTopOf="@+id/show_cart"
+                    />
+                <Button
+                    android:id="@+id/show_cart"
+                    style="?attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ViewCart"
+                    app:layout_constraintTop_toBottomOf="@+id/ViewCart_divider"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

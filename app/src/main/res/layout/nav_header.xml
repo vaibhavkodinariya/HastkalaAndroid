@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_gray"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.google.android.material.circularreveal.cardview.CircularRevealCardView
+        android:id="@+id/circularRevealCardView"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="100dp"
+        >
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/malegif"
+            android:visibility="invisible"
+            android:layout_width="90sp"
+            android:layout_height="90sp"
+            android:src="@drawable/male1" />
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/femalegif"
+            android:visibility="invisible"
+            android:layout_width="90sp"
+            android:layout_height="90sp"
+            android:src="@drawable/female1" />
+    </com.google.android.material.circularreveal.cardview.CircularRevealCardView>
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/User_Name" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Email"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/errorinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/please_logged_in_first"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+</LinearLayout>

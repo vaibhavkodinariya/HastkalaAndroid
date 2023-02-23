@@ -1,0 +1,105 @@
+<resources>
+    <string name="app_name">Hastkala</string>
+    <string name="action_bar_name">Account</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirmpassword">ConfirmPassword</string>
+    <string name="welcome">Welcome to Hastkala  An Art from Heart</string>
+    <string name="log_detail">Please enter your details to login and personlize the products</string>
+    <string name="login">login</string>
+    <string name="register">register</string>
+    <string name="Reg_detail">Please enter your details to create an account and register</string>
+    <string name="AlreadyUser"><u>Already a user ?/Click here to login</u></string>
+    <string name="signup"><u>click here to create account and sign up</u></string>
+    <string name="name">Name</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="address">Address</string>
+    <string name="state">State</string>
+    <string name="pincode">Pincode</string>
+    <string name="save">Save</string>
+    <string name="User_MobileNumber">+91*********</string>
+    <string name="Email">soham@gmail.com</string>
+    <string name="User_Name">Soham Somaiya</string>
+    <string name="ViewOrders">view orders</string>
+    <string name="GotoCart">Goto your cart from here</string>
+    <string name="GotoOrder">Goto your orders from here</string>
+    <string name="ViewCart">view cart</string>
+    <string name="ProductName">Product Name</string>
+    <string name="Product_Quantity">Quantity</string>
+    <string name="Product_Price">₹5500</string>
+    <string name="Btn_Remove">remove</string>
+    <string name="Btn_Buy">buy</string>
+    <string name="ShopContinue">continue shopping</string>
+    <string name="SubTotal">SUB TOTAL</string>
+    <string name="Btn_Update">update</string>
+    <string name="Sub_Price">₹5500</string>
+    <string name="Shipping">SHIPPING CHARGE</string>
+    <string name="Shipping_Charge">₹0(FREE)</string>
+    <string name="GrandTotal">GRAND TOTAL</string>
+    <string name="Grand_Price">₹5500</string>
+    <string name="Proceed_confirm">PROCEED TO CONFIRM</string>
+    <string name="OrderId">#OrderId: 7531 </string>
+    <string name="productname_order">Product Name</string>
+    <string name="ProductSize_Order">size: 4X</string>
+    <string name="Quantity_Order">Quantity : 1</string>
+    <string name="ProductPrice_Order">₹5500</string>
+    <string name="ProductDiscription_Order">Product Discription</string>
+    <string name="OrderStatus_Text">Order Status</string>
+    <string name="OrderStatus">Order Placed</string>
+    <string name="Btn_Cancle">Cancle</string>
+    <string name="Btn_Edit">Edit</string>
+    <string name="Product_discription">Product Discription</string>
+    <string name="quantity_1">Quantity : 1</string>
+    <string name="proceed_to_checkout">PROCEED TO CHECKOUT</string>
+    <string name="male">male</string>
+    <string name="female">female</string>
+    <string name="main_price"><s>₹5500</s></string>
+    <string name="discounted_price"><b>₹5000</b></string>
+    <string name="you_save">you save ₹500 (10%)</string>
+    <string name="Shippping_text">Fast and Free Shipping</string>
+    <string name="size_text">SIZE-UK/India</string>
+    <string name="size_cloth">xl</string>
+    <string name="size_footwear">10</string>
+    <string name="Cod">Cash On Dilivery</string>
+    <string name="return_policy">No return Policy</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="select_quantity">Select Quantity</string>
+    <string name="your_shipping_details">Your Shipping Details</string>
+    <string name="satyam_colony_near_underbridge_jamnagar">Satyam colony near underbridge Jamnagar</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="cartsize">Size</string>
+    <string name="x">X</string>
+    <string name="size">Size</string>
+    <string name="incompletedata">Please Complete Your Profile</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="fashion">Fashion</string>
+    <string name="earthen_wear">Earthen wear</string>
+    <string name="home_decore">Home Decore</string>
+    <string name="beauty_products">Beauty Products</string>
+    <string name="hand_bags">Hand Bags</string>
+    <string name="save_10">Save (10%)</string>
+    <string name="save_25">25%</string>
+    <string name="please_logged_in_first">Please Logged In First</string>
+    <string name="male_section">Male Section</string>
+    <string name="female_section">Female Section</string>
+    <string name="our_collection">Our Collection</string>
+    <string name="orderempty">Your Order is Empty</string>
+    <string name="notValidEmail">Not Valid Email</string>
+    <string name="completeprofile">Please Complete Your Profile</string>
+    <string-array name="Quantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="Size">
+        <item>s</item>
+        <item>m</item>
+        <item>l</item>
+        <item>xl</item>
+        <item>xxl</item>
+    </string-array>
+</resources>
